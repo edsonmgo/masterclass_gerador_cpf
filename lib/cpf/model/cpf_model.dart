@@ -5,9 +5,10 @@ class CPFModel {
 
   String geraNumeros() {
     String genCPF = '';
+    int maxNumbers = 08;
 
-    while (genCPF.length <= 10) {
-      genCPF += rnd.nextInt(10).toString();
+    while (genCPF.length <= maxNumbers) {
+      genCPF += rnd.nextInt(maxNumbers).toString();
     }
 
     return genCPF;
